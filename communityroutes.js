@@ -1,5 +1,5 @@
 import express from 'express';
-import Community from '../models/Community.js';
+import Community from './community.js';
 import User from '../models/User.js';
 import { requireAuth } from '../middleware/auth.js';
 
