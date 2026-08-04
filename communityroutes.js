@@ -1,7 +1,7 @@
 import express from 'express';
 import community from './community.js';
 import user from './user.js';
-import { requireAuth } from '../middleware/auth.js';
+import { requireAuth } from './auth.js';
 
 const router = express.Router();
 
