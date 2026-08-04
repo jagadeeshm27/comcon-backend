@@ -4,8 +4,8 @@ import cors from 'cors';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 import { connectDB } from './db.js';
-import authRoutes from './authRoutes.js';
-import communityRoutes from './communityRoutes.js';
+import authRoutes from './authroutes.js';
+import communityRoutes from './communityroutes.js';
 
 const app = express();
 
