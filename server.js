@@ -18,6 +18,11 @@ const authLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 30 });
 app.use('/api/auth', authLimiter, authRoutes);
 app.use('/api/communities', communityRoutes);
 
+// Root route to handle visits to the main URL
+app.get('/', (req, res) => {
+  res.send('ComCon API is running successfully! 🚀');
+});
+
 app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
 
 // ⚠️ Defaults to 5001 to match API_BASE_URL in login.html/app.js.
