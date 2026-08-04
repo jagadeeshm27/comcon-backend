@@ -1,6 +1,6 @@
 import express from 'express';
-import Community from './community.js';
-import User from '../models/User.js';
+import community from './community.js';
+import user from './User.js';
 import { requireAuth } from '../middleware/auth.js';
 
 const router = express.Router();
