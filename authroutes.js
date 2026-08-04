@@ -2,7 +2,7 @@ import express from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import user from './user.js';
-import { requireAuth } from './Auth.js';
+import { requireauth } from './auth.js';
 
 const router = express.Router();
 
